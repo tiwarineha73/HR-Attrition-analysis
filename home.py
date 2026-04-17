@@ -61,6 +61,12 @@ def render(df):
     with col2:
         st.markdown(f"""
             <div class="card">
+            import plotly.express as px
+
+st.markdown("### 📊 Attrition Overview")
+
+fig = px.pie(df, names="Attrition", hole=0.5)
+st.plotly_chart(fig, use_container_width=True)
                 <h4>Attrition Rate</h4>
                 <h2>{round(attrition/total*100,2)}%</h2>
             </div>

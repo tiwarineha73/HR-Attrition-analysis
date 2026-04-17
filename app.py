@@ -14,6 +14,12 @@ st.set_page_config(
     layout="wide"
 )
 
+  #Hide Streamlit's auto generated top st.markdown("""
+   <sttyle>
+           [data testid="stSidebarNav"]
+    </style>
+    """, unsafe_allow_html=True)
+
 # Safe CSS injection (won't crash if utilis is missing)
 try:
     from utilis.styles import inject_css

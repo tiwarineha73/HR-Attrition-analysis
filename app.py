@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
+import sys
+from pathlib import Path
 
+sys.path.append(str(Path(__file__).parent))
 from pages.home import render as render_home
 from pages.data_overview import render as render_data_overview
 from pages.attrition_analysis import render as render_attrition

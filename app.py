@@ -15,7 +15,7 @@ st.set_page_config(
 
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(___file___).parent))
 
 # ── Utils imports ──────────────────────────────────────────────────────────────
 from utils.styles import inject_css

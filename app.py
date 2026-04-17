@@ -9,8 +9,9 @@ from department_insights import render as render_department
 from prediction import render as render_prediction
 from conclusion import render as render_conclusion
 from utilis.styles import inject_css 
-inject_css()
+
 st.set_page_config(page_title="HR Analytics", layout="wide")
+inject_css()
 
 # Load data
 try:

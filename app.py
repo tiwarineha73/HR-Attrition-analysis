@@ -12,11 +12,14 @@ from utilis.styles import inject_css
 
 st.set_page_config(page_title="HR Analytics", layout="wide")
 inject_css()
+import os
 
-# Load data
+# Load data safely
 try:
-    df = pd.read_csv("HR_Analytics_Data.csv")
-except:
+    file_path = os.path.join(os.path.dirname(__file__), "HR_Analytics_Data.csv")
+    df = pd.read_csv(file_path)
+except Exception as e:
+    st.error(f"Error loading data: {e}")
     df = pd.DataFrame()
 
 pages = {

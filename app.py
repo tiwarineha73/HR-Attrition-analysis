@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 import sys
-from pathlib import Path
+import os
+BASE_DIR = os.path.dirname(os.path.abspath)(__file__))
+sys.path.insert(0, BASE_DIR)
 
-sys.path.append(str(Path(__file__).parent))
 from pages.home import render as render_home
 from pages.data_overview import render as render_data_overview
 from pages.attrition_analysis import render as render_attrition

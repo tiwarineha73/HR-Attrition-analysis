@@ -17,7 +17,11 @@ st.set_page_config(
   #Hide Streamlit's auto generated 
 st.markdown("""
    <style>
-           [data testid="stSidebarNav"]
+           [data-testid="stSidebarNav"]
+           [data-testid="stSidebarNavItems"] {display: none !important;}
+           section[data-testid="stSidebar"] > div > div > div > div:first-child{
+             display: none !important;
+             }
     </style>
     """, unsafe_allow_html=True)
 

@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
   #Hide Streamlit's auto generated top st.markdown("""
-   <sttyle>
+   <style>
            [data testid="stSidebarNav"]
     </style>
     """, unsafe_allow_html=True)

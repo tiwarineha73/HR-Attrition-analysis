@@ -4,14 +4,14 @@ import sys
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).parent))
-from pages.home import render as render_home
-from pages.data_overview import render as render_data_overview
-from pages.attrition_analysis import render as render_attrition
-from pages.demographics import render as render_demographics
-from pages.department_insights import render as render_department
-from pages.prediction import render as render_prediction
-from pages.conclusion import render as render_conclusion
-from utilis.styles import inject_css 
+from .pages.home import render as render_home
+from .pages.data_overview import render as render_data_overview
+from .pages.attrition_analysis import render as render_attrition
+from .pages.demographics import render as render_demographics
+from .pages.department_insights import render as render_department
+from .pages.prediction import render as render_prediction
+from .pages.conclusion import render as render_conclusion
+from .utilis.styles import inject_css 
 
 st.set_page_config(page_title="HR Analytics", layout="wide")
 inject_css()

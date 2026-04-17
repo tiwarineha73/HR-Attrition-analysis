@@ -13,7 +13,7 @@ st.set_page_config(page_title="HR Analytics", layout="wide")
 
 # Load data
 try:
-    df = pd.read_csv("data.csv")
+    df = pd.read_csv("HR_Analytics_Data.csv")
 except:
     df = pd.DataFrame()
 

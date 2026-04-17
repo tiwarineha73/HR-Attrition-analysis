@@ -14,7 +14,8 @@ st.set_page_config(
     layout="wide"
 )
 
-  #Hide Streamlit's auto generated top st.markdown("""
+  #Hide Streamlit's auto generated 
+st.markdown("""
    <style>
            [data testid="stSidebarNav"]
     </style>

@@ -1,8 +1,9 @@
-import streamlit as st
+streamlit as st
 import pandas as pd
 import sys
 import os
-BASE_DIR = os.path.dirname(os.path.abspath)(__file__))
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 from pages.home import render as render_home
@@ -12,11 +13,10 @@ from pages.demographics import render as render_demographics
 from pages.department_insights import render as render_department
 from pages.prediction import render as render_prediction
 from pages.conclusion import render as render_conclusion
-from utilis.styles import inject_css 
+from utilis.styles import inject_css
 
 st.set_page_config(page_title="HR Analytics", layout="wide")
 inject_css()
-import os
 
 # Load data safely
 try:

@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 
-from home import render as render_home
-from data_overview import render as render_data_overview
-from attrition_analysis import render as render_attrition
-from demographics import render as render_demographics
-from department_insights import render as render_department
-from prediction import render as render_prediction
-from conclusion import render as render_conclusion
+from pages.home import render as render_home
+from pages.data_overview import render as render_data_overview
+from pages.attrition_analysis import render as render_attrition
+from pages.demographics import render as render_demographics
+from pages.department_insights import render as render_department
+from pages.prediction import render as render_prediction
+from pages.conclusion import render as render_conclusion
 from utilis.styles import inject_css 
 
 st.set_page_config(page_title="HR Analytics", layout="wide")

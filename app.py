@@ -395,3 +395,4 @@ elif page == "💡 Conclusion":
     - Focus retention efforts on **Sales** department
     - Review promotion policies — only **{due_pct}%** are due for promotion
     - Support employees at **Level 1** with career growth opportunities
+    """)

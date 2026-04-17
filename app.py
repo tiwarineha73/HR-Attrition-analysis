@@ -13,7 +13,7 @@ from pages.demographics import render as render_demographics
 from pages.department_insights import render as render_department
 from pages.prediction import render as render_prediction
 from pages.conclusion import render as render_conclusion
-from utilis.styles import inject_css
+from utils.styles import inject_css
 
 st.set_page_config(page_title="HR Analytics", layout="wide")
 inject_css()
